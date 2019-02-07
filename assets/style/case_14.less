@@ -1,0 +1,85 @@
+.case14 {
+	overflow: hidden;
+	position: relative;
+	max-width: 480px;
+    margin: 0 auto;
+
+	&-box {
+		height: 600px;
+		text-align: center;
+
+		.map {
+			position: absolute;
+    		left: -80%;
+		}
+
+		.logo {
+			position: absolute;
+			left: 50%;
+			bottom: 155px;
+			transform: translateX(-50%);
+		}
+
+		.marker {
+			position: absolute;
+			top: 30%;
+    		left: 10%;
+		}
+
+		p {
+			position: absolute;
+    		left: 50%;
+    		bottom: 12%;
+    		transform: translateX(-50%);
+			color: #909090;
+			font-family: @fontFamilyStyleP;
+		}
+	}
+}
+
+@media all and (min-width: 960px) {
+    .case14 {
+		max-width: 960px;
+
+		&-box {
+
+			.map {
+				left: -6%;
+			}
+
+			.marker {
+				left: 40%;
+			}
+		}
+    }
+}
+
+@media all and (min-width: 1440px) {
+    .case14 {
+		max-width: 1440px;
+
+		&-box {
+
+			.marker {
+				left: 25%;
+			}
+		}
+    }
+}
+
+@media all and (min-width: 1920px) {
+    .case14 {
+		max-width: 1920px;
+
+		&-box {
+
+			.map {
+				left: -2%;
+			}
+
+			.marker {
+				left: 21%;
+			}
+		}
+    }
+}

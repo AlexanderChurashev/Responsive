@@ -1,0 +1,136 @@
+.case10 {
+    text-align: center;
+
+    .media {
+        display: none;
+    }
+
+	h2 {
+        width: 438px;
+        margin: 0 auto;
+		font-size: 25px;
+		color: #385461;
+		font-family: @fontFamilyStyleHB;
+		text-transform: capitalize;
+	}
+
+	.pictures {
+		display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 480px;
+        margin: 3% auto;
+
+        .pictures-picture {
+            position: relative;
+            display: flex;
+
+            .picture-hover {
+                display: none;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: #bf5750;
+                opacity: .7;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                h3 {
+                    width: 200px;
+                    font-size: 20px;
+                    color: #ffffff;
+                    text-transform: capitalize;
+                    font-family: @fontFamilyStyleHB;
+                }
+
+                p {
+                    width: 200px;
+                    font-size: 14px;
+                    color: #ffffff;
+                    font-family: @fontFamilyStyleP;
+                }
+
+                .add {
+                    width: 32px;
+                    height: 32px;
+                    border: 2px solid #ffffff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+
+                    a {
+    				    text-decoration: none;
+    				    color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        .pictures-picture:hover .picture-hover {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media all and (min-width: 960px) {
+    .case10 {
+
+        .small {
+            display: none;
+        }
+
+        .media {
+            display: block;
+        }
+        
+        h2 {
+            width: 710px;
+        }
+
+        .pictures {
+            max-width: 960px;
+        }
+    }
+}
+
+@media all and (min-width: 1440px) {
+    .case10 {
+
+        .pictures {
+            max-width: 1440px;
+        }
+
+        .small {
+            display: block;
+        }
+
+        .media {
+            display: none;
+        }
+    }
+}
+
+@media all and (min-width: 1920px) {
+    .case10 {
+
+        .pictures {
+            max-width: 1920px;
+            
+            &-picture {
+
+                .small {
+                    display: none;
+                }
+
+                .media {
+                    display: block;
+                }
+            }
+        }
+    }
+}

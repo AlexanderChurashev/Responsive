@@ -1,0 +1,123 @@
+footer {
+	background-color: #324d5b;
+
+	.footer-box {
+		max-width: 240px;
+		margin: 0 auto;
+        padding: 70px 0;
+		display: flex;
+        flex-direction: column-reverse;
+		align-items: center;
+    	
+    	.footer-logo {
+    		text-align: center;
+       		color: #ffffff;
+    		font-family: @fontFamilyStyleP;
+
+    		.link-logo {
+    			margin-right: 30px;
+                display: none;
+    		}
+
+    		.link-p {
+    			color: #ffffff;
+                
+                &:hover {
+                    color: #2cc3de;
+                }
+    		}
+    	}
+
+    	.footer-btn {
+    		width: 200px;
+
+    		.btn-list {
+    			list-style: none;
+    			padding: 0;
+    			margin: 0;
+    			display: flex;
+    			justify-content: space-between;
+
+    			&-item {
+                    height: 46px;
+    				
+                    &:hover {
+                        background-color: #2cc3de;
+                    }
+
+                    .medium {
+                        display: none;
+                    }
+
+    				a {
+    					text-decoration: none;
+    					color: #fff;
+    					text-transform: uppercase;
+    					font-size: 17px;
+    					font-family: @fontFamilyStyleHB;
+    				}
+    			}
+    		}
+    	}
+	}
+}
+
+@media all and (min-width: 960px) {
+    footer {
+
+        .footer-box {
+            max-width: 900px;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .footer-logo {
+                width: 320px;
+                display: flex;
+                align-items: center;
+
+                .link-logo {
+                    display: block;
+                }
+            }
+
+            .footer-btn {
+                width: 480px;
+
+                .btn-list {
+
+                    &-item {
+                        border: 2px solid #fff;
+                        padding: 15px 20px;
+                        border-radius: 5px;
+                        display: flex;
+                        align-items: center;
+
+                        .small {
+                            display: none;
+                        }
+
+                        .medium {
+                            display: block;
+                        }
+
+                        a {
+
+                            img {
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1440px) {
+    footer {
+
+        .footer-box {
+            max-width: 1100px;
+        }
+    }
+}

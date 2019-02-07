@@ -1,0 +1,121 @@
+.promo {
+    display: none;
+	max-width: 724px;
+	margin: 120px auto;
+	
+	.promo-slogan {
+		max-width: 600px;
+		text-align: center;
+		margin: 0 auto;
+		
+		h2 {
+			.styleH2;
+		}
+
+		p {
+			.styleP;
+			line-height: 23px;
+		}
+	}
+
+	.iphone {
+		text-align: center;
+    	margin-top: 10%;
+    	position: relative;
+
+    	.stroke {
+    		position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		transform: translate(-50%, -50%);
+   			z-index: -1;
+    	}
+
+    	.stroke-box {
+    		width: 440px;
+    		height: 60px;
+    		display: flex;
+		    justify-content: space-between; 
+		    align-items: center;
+		    position: absolute;
+		    left: 50%;
+		    transform: translate(-50%);
+		}
+
+		.top {
+			width: 440px;
+    		height: 60px;
+    		position: absolute;
+    		top: 23%;
+		}
+
+		.center {
+			width: 500px;
+    		height: 60px;
+    		position: absolute;
+    		top: 44%;
+		}
+
+		.bottom {
+			width: 440px;
+    		height: 60px;
+    		position: absolute;
+    		bottom: 22%;
+		}
+
+		.globuse {
+		   	width: 60px;
+    		height: 100%;
+    		display: flex;
+    		justify-content: center;
+    		background: #f6f6f6 url(../img/main/case5/world.svg) center no-repeat;
+    		border-radius: 50%;
+
+    		&:hover {
+    			background: #e2574c url(../img/main/case5/icon.png) center no-repeat; 
+    		}
+
+    		&-hover {
+    			display: none;
+    			position: absolute;
+    			width: 175px;
+    			
+    			&.left {
+    				right: 105%;
+    				bottom: -3%;
+    			}
+
+    			&.right {
+    				left: 105%;
+    				bottom: -3%;
+    			}
+
+    			h3 {
+    				font-size: 14px;
+    				color: #385461;
+    				text-transform: uppercase;
+    				font-family: @fontFamilyStyleHB;
+    			}
+
+    			p {
+    				color: #909090;
+    				font-family: @fontFamilyStyleP;
+    				font-size: 13px;
+    			}
+    		}
+
+    		&.dropdown {
+
+    			&:hover .globuse-hover {
+    				display: block;
+    			} 
+    		}
+		}
+    }
+}
+
+@media all and (min-width: 960px) {
+    .promo {
+        display: block;
+    }
+}

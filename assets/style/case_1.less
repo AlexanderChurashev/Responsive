@@ -1,0 +1,51 @@
+.features {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	
+	&-box {
+		max-width: 354px;
+		margin: 0 auto;
+		margin-top: 50px;
+
+		img {
+			width: 64px;
+			height: 64px;
+		}
+
+		h4 {
+			font-family: @fontFamilyStyleHB;
+			font-size: 20px;
+			text-transform: uppercase;
+			color: #385461;
+		}
+
+		p {
+			font-family: @fontFamilyStyleP;
+			font-size: 13px;
+			color: #909090;
+			line-height: 21px;
+		}
+	}
+}
+
+@media all and (min-width: 960px) {
+	.features {
+		flex-direction: row;
+
+		&-box {
+			max-width: 250px;
+		}
+	}
+}
+
+@media all and (min-width: 1440px) {
+	.features {
+		max-width: 1310px;
+		margin: 0 auto;
+
+		&-box {
+			max-width: 347px;
+		}
+	}
+}

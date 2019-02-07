@@ -1,0 +1,39 @@
+.about {
+	text-align: center;
+	margin: 10% auto;
+    max-width: 450px;
+    padding: 10px;
+
+    &-img {
+    	height: 226px;
+    	background: url(../img/main/case3/macbook.png) center no-repeat;
+    }
+
+	h2 {
+		.styleH2;
+	}
+
+	p {
+		.styleP;
+		line-height: 23px;
+	}
+
+	button {
+		text-transform: uppercase;
+		font-family: @fontFamilyStyleHB;
+		font-size: 17px;
+		color: #3db39e;
+		padding: 9px 27px;
+		cursor: pointer;
+		border: 4px solid #3db39e;
+		border-radius: 7px;
+		background-color: #ffffff;
+		margin-top: 57px;
+	}
+}
+
+@media all and (min-width: 960px) {
+	.about {
+		max-width: 610px;
+	}
+}
